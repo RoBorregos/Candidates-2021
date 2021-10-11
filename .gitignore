@@ -1,0 +1,15 @@
+#Folders and files to ignore
+
+### ROS ###
+### ROS ###
+/candidates_ws/devel/
+/candidates_ws/devel_isolated/
+/candidates_ws/logs/
+/candidates_ws/build/
+/candidates_ws/build_isolated/
+/candidates_ws/bin/
+/candidates_ws/install/
+/candidates_ws/.catkin_tools/
+/candidates_ws/.catkin_workspace
+/candidates_ws/src/ExternalPackages/
+/candidates_ws/src/.rosinstall.bak
