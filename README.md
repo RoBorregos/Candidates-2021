@@ -19,6 +19,7 @@ Here is a technical description of the different nodes/actions/services the __Dr
 
 ## Env setup
 1. Install ROS Noetic
+2. 
 
 ## Installation
 
