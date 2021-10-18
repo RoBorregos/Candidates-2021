@@ -10,8 +10,8 @@ def talker():
         1 - Person asked for a drink
         2 - The cup is in front of you
     '''
-    pub = rospy.Publisher('env_analysis_feedback', UInt16, queue_size=10)
     rospy.init_node('env_analysis_node', anonymous=True)
+    pub = rospy.Publisher('party_status', UInt16, queue_size=10)
     rate = rospy.Rate(1) # 1hz
     while not rospy.is_shutdown():
         env_analysis = random.randint(0,2)
