@@ -1,0 +1,8 @@
+#goal
+uint16 behavior
+---
+#result
+uint16 result
+---
+#feedback
+uint16 status

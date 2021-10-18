@@ -65,7 +65,7 @@ Service for human robot interaction through speech, which:
 ### Party Navigation
 | Goal message | Valid goals |
 | --- | --- |
-| **uint16 behavior**: Specifies the navigation behavior of the robot. | <ul><li>0 - Patrol the party</li><li>1 - Stop</li></ul> |
+| **uint16 behavior**: Specifies the navigation behavior of the robot. | <ul><li>1 - Patrol the party</li><li>2 - Stop</li></ul> |
 
 ## Development team
 
