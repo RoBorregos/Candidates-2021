@@ -1,0 +1,8 @@
+#goal definition
+uint16 beverage_type
+---
+#result definition
+uint16 result
+---
+#feedback
+uint16 mechanismStep
