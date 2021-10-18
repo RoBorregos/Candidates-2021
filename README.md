@@ -13,13 +13,19 @@
 
 ## Installation
 
-1. Clone the project repository on your local machine.
+1. **IMPORTANT: Fork the repository into your account**
 
-   SSH:
+2. Clone the project repository on your local machine.
 
-   ```bash
-   $ git clone https://github.com/RoBorregos/Candidates-2021.git
-   ```
+HTTP:
+``` bash
+$ git clone https://github.com/your-username/Candidates-2021.git
+```
+
+SSH:
+``` bash 
+$ git clone git@github.com:your-username/robocup-home.git
+```
 
 ### Architecture Challenge:
 2. Change to branch systemArchitectureChallenge
