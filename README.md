@@ -60,7 +60,7 @@ Service for human robot interaction through speech, which:
 
 | Request | Response |
 | --- | --- |
-| **uint16 question**: Specifies the question the robot will give the user. <ul><li>0 - What beverage do you want?</li><li>1 - Could you repeat the beverage, please?</li></ul>|<ul><li>1 - Lemonade</li><li>2 - Coca Cola</li><li>3 - Water</li><li>4 - Undefined</li></ul> |
+| **uint16 question**: Specifies the question the robot will give the user. <ul><li>1 - What beverage do you want?</li><li>2 - Could you repeat the beverage, please?</li></ul>|<ul><li>1 - Lemonade</li><li>2 - Coca Cola</li><li>3 - Water</li><li>4 - Undefined</li></ul> |
 
 ### Party Navigation
 | Goal message | Valid goals |

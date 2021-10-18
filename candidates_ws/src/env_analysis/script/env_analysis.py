@@ -2,6 +2,7 @@
 # license removed for brevity
 import rospy
 import random
+import time
 from std_msgs.msg import UInt16
 
 def talker():
@@ -12,12 +13,11 @@ def talker():
     '''
     rospy.init_node('env_analysis_node', anonymous=True)
     pub = rospy.Publisher('party_status', UInt16, queue_size=10)
-    rate = rospy.Rate(1) # 1hz
     while not rospy.is_shutdown():
         env_analysis = random.randint(0,2)
         rospy.loginfo(env_analysis)
         pub.publish(env_analysis)
-        rate.sleep()
+        time.sleep(10)
 
 if __name__ == '__main__':
     try:
