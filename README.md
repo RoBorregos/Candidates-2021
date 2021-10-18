@@ -21,14 +21,14 @@
    $ git clone https://github.com/RoBorregos/Candidates-2021.git
    ```
 
-### ArchitectureChallenge:
+### Architecture Challenge:
 2. Change to branch systemArchitectureChallenge
 
    ```bash
    $ git checkout systemArchitectureChallenge
    ```
 
-### IntegrationChallenge:
+### Integration Challenge:
 2. Change to branch systemIntegrationChallenge
 
    ```bash
