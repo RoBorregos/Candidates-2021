@@ -22,7 +22,6 @@ Here is a technical description of the different nodes/actions/services the @HOM
   - [Usage](#usage)
   - [System Architecture](#system-architecture)
   - [Mechanism action client](#mechanism-action-client)
-  - [Mechanism action client](#mechanism-action-client)
   - [Mechanism action servers](#mechanism-action-servers)
 
 ## Env setup
