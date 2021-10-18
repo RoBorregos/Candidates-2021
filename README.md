@@ -1,9 +1,9 @@
-# Project Name
-
+# System Architecture Design Challenge
+## Drinking Robot
 
 
 ## Description
-
+Here is a technical description of the different nodes/actions/services the __Drinking Robot__ will execute. 
 
 
 ## Table of contents
@@ -17,6 +17,10 @@
   - [References/Support links](#references-support-links)
   - [License](#license) 
 
+## Env setup
+1. Install ROS Noetic
+2. 
+
 ## Installation
 
 1. Clone the project repository on your local machine.
@@ -24,15 +28,44 @@
    SSH:
 
    ```bash
-   $ git clone --recurse-submodules https://github.com/RoBorregos/
+   $ git clone https://github.com/RoBorregos/Candidates-2021.git
    ```
 
+2. Change to branch systemArchitectureChallenge
 
-## Usage
+   ```bash
+   $ git checkout systemArchitectureChallenge
+   ```
 
-How to use the project after installation.
-Pictures of the project working.
+## Robot modules
 
+### Env analysis
+Node publisher in charge of telling the robotic system what is happening around the robot.
+
+| Topic name | Message | Definition |
+| --- | --- | --- |
+| env_analysis_feedback | uint16 data | <ul><li>0 - There is no stimuli</li><li>1 - Person asked for yor attention</li><li>2 - The cup is in front of you</li></ul> |
+
+### Beverage dispenser
+Action server in charge of activating and deactivating the beverage dispenser.
+
+| Goal message | Valid goals |
+| --- | --- |
+| **uint16 beverage\_type**: Specifies the type of beverage the user wants. | <ul><li>0 - Lemonade</li><li>1 - Coca Cola</li><li>2 - Water</li></ul> |
+
+### HRI
+Service for human robot interaction through speech, which:
+- Asks what kind of beverage the person wants.
+- Retrieves the beverage
+
+| Request | Response |
+| --- | --- |
+| **uint16 question**: Specifies the question the robot will give the user. <ul><li>0 - What beverage do you want?</li><li>1 - Could you repeat the beverage, please?</li></ul>|<ul><li>0 - Lemonade</li><li>1 - Coca Cola</li><li>2 - Water</li><li>3 - Undefined</li></ul> |
+
+### Party Navigation
+| Goal message | Valid goals |
+| --- | --- |
+| **uint16 behavior**: Specifies the navigation behavior of the robot. | <ul><li>0 - Patrol the party</li><li>1 - Stop</li></ul> |
 
 ## Development team
 
