@@ -28,6 +28,8 @@ Here is a technical description of the different nodes/actions/services the @HOM
 ## Env setup
 1. Install ROS Noetic : [Reference](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
+2. Install Move.it : [Reference](https://moveit.ros.org/install/)
+
 ## Installation
 1. **Fork the repository into your account**
 
@@ -46,11 +48,17 @@ Here is a technical description of the different nodes/actions/services the @HOM
 
 3. Change to branch systemIntegrationChallenge
 
-   bash
+   ```bash
    $ git checkout systemIntegrationChallenge
+   ```
    
 ## Usage
-For evaluation and debugging of your 
+For evaluation and debugging of your system you can run the following to mock the external topics connected to the mechanism action client:
+
+   ```bash
+   $ rosrun system_stimuli mechanical_stimuli.py
+   $ rosrun system_stimuli shutdown_system.py
+   ```
 
 ## System Architecture
 
@@ -92,7 +100,7 @@ This node shall implement the arm state machine, giving the corresponding feedba
 #### Action server definition
 | Goal message | Result | Feedback |
 | --- | --- | --- |
-| *moveit_msgs/Grasp grasp*: Specifies the final position and orientation of the TCP. | *uint16 result*: Defines the result of the action. <ul><li>0 - TCP correctly positioned</li><li>1 - Arm stuck</li><li>2 - Grip stuck</li><li>3 - Unknown error</li></ul> | *uint16 state*: Specifies the state of action in which the arm is currently. <ul><li>0 - Calculating FK</li><li>1 - Executing arm movement</li><li>2 - Executing grip movement</li></ul> |
+| **moveit_msgs/Grasp grasp**: Specifies the final position and orientation of the TCP. | **uint16 result**: Defines the result of the action. <ul><li>0 - TCP correctly positioned</li><li>1 - Arm stuck</li><li>2 - Grip stuck</li><li>3 - Unknown error</li></ul> | **uint16 state**: Specifies the state of action in which the arm is currently. <ul><li>0 - Calculating FK</li><li>1 - Executing arm movement</li><li>2 - Executing grip movement</li></ul> |
 
 ### Neck Server
 This node shall implement the neck state machine, giving the corresponding feedback and result.
@@ -103,7 +111,7 @@ This node shall implement the neck state machine, giving the corresponding feedb
 #### Action server definition
 | Goal message | Result | Feedback |
 | --- | --- | --- |
-| *geometry_msgs/Quaternion posture*: Specifies the final orientation of the neck. | *uint16 result*: Defines the result of the action. <ul><li>0 - Neck correctly positioned.</li><li>1 - Neck stuck</li><li>2 - Unknown error</li></ul> | *uint16 state*: Specifies the state of action in which the neck is currently. <ul><li>0 - Calculating FK</li><li>1 - Executing neck movement</li></ul>|
+| **geometry_msgs/Quaternion posture**: Specifies the final orientation of the neck. | **uint16 result**: Defines the result of the action. <ul><li>0 - Neck correctly positioned.</li><li>1 - Neck stuck</li><li>2 - Unknown error</li></ul> | **uint16 state**: Specifies the state of action in which the neck is currently. <ul><li>0 - Calculating FK</li><li>1 - Executing neck movement</li></ul>|
 
 ### Elevator Server
 This node shall implement the elevator state machine, giving the corresponding feedback and result.
@@ -114,4 +122,4 @@ This node shall implement the elevator state machine, giving the corresponding f
 #### Action server definition
 | Goal message | Result | Feedback |
 | --- | --- | --- |
-| *geometry_msgs/Pose pose*: Specifies the final position and orientation of the robot's torso. | *uint16 result*: Defines the result of the action. <ul><li>0 - Torso correctly positioned.</li><li>1 - Elevator mechanism stuck</li><li>2 - Unknown error</li></ul> | *uint16 state*: Specifies the state of action in which the elevator is currently. <ul><li>0 - Calculating FK</li><li>1 - Executing elevator movement</li></ul>|
+| **geometry_msgs/Pose pose**: Specifies the final position and orientation of the robot's torso. | **uint16 result**: Defines the result of the action. <ul><li>0 - Torso correctly positioned.</li><li>1 - Elevator mechanism stuck</li><li>2 - Unknown error</li></ul> | **uint16 state**: Specifies the state of action in which the elevator is currently. <ul><li>0 - Calculating FK</li><li>1 - Executing elevator movement</li></ul>|
