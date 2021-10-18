@@ -13,3 +13,5 @@
 /candidates_ws/.catkin_workspace
 /candidates_ws/src/ExternalPackages/
 /candidates_ws/src/.rosinstall.bak
+
+*.pyc

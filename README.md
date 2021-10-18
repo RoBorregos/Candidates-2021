@@ -51,7 +51,7 @@ Action server in charge of activating and deactivating the beverage dispenser.
 
 | Goal message | Valid goals |
 | --- | --- |
-| **uint16 beverage\_type**: Specifies the type of beverage the user wants. | <ul><li>0 - Lemonade</li><li>1 - Coca Cola</li><li>2 - Water</li></ul> |
+| **uint16 beverage\_type**: Specifies the type of beverage the user wants. | <ul><li>1 - Lemonade</li><li>2 - Coca Cola</li><li>3 - Water</li></ul> |
 
 ### HRI
 Service for human robot interaction through speech, which:
@@ -60,7 +60,7 @@ Service for human robot interaction through speech, which:
 
 | Request | Response |
 | --- | --- |
-| **uint16 question**: Specifies the question the robot will give the user. <ul><li>0 - What beverage do you want?</li><li>1 - Could you repeat the beverage, please?</li></ul>|<ul><li>0 - Lemonade</li><li>1 - Coca Cola</li><li>2 - Water</li><li>3 - Undefined</li></ul> |
+| **uint16 question**: Specifies the question the robot will give the user. <ul><li>0 - What beverage do you want?</li><li>1 - Could you repeat the beverage, please?</li></ul>|<ul><li>1 - Lemonade</li><li>2 - Coca Cola</li><li>3 - Water</li><li>4 - Undefined</li></ul> |
 
 ### Party Navigation
 | Goal message | Valid goals |
@@ -72,9 +72,7 @@ Service for human robot interaction through speech, which:
 | Name                    | Email                                                               | Github                                                       | Role      |
 | ----------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------ | --------- |
 | Aurora Tijerina | [auro.tj@gmail.com](mailto:auro.tj@gmail.com) | [@AuroTB](https://github.com/aurotb) | Navigation & Integration |
-| Brenda Martínez Orta | [bmaor2001@gmail.com](mailto:bmaor2001@gmail.com) | [@bmaor2001](https://github.com/bmaor2001) | Result data decoding |
-| Keven Arroyo | [dake.3601@gmail.com](mailto:dake.3601@gmail.com) | [@dake3601](https://github.com/dake3601) | Path finding |
-| Ivan Sol | [onticastro7@gmail.com](mailto:onticastro7@gmail.com) | [@IvanSol123](https://github.com/IvanSol123) | Mechanics |
+| José Cisneros | [A01283070@itesm.mx](mailto:A01283070@itesm.mx) | [@Josecisneros001](https://github.com/Josecisneros001) | PM & Programmer |
 
 
 ## References/Support links
