@@ -28,16 +28,22 @@ Here is a technical description of the different nodes/actions/services the __Dr
 1. Install ROS Noetic : [Reference](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
 ## Installation
+1. **Fork the repository into your account**
 
-1. Clone the project repository on your local machine.
+2. Clone the project repository on your local machine.
 
-   SSH:
+   HTTP:
 
    ```bash
-   $ git clone https://github.com/RoBorregos/Candidates-2021.git
+   $ git clone https://github.com/your-username/Candidates-2021.git
    ```
 
-2. Change to branch systemArchitectureChallenge
+   SSH
+   ```bash
+   $ git clone git@github.com:your-username/robocup-home.git
+   ```
+
+3. Change to branch systemArchitectureChallenge
 
    ```bash
    $ git checkout systemArchitectureChallenge
