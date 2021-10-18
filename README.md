@@ -18,6 +18,7 @@ Here is a technical description of the different nodes/actions/services the __Dr
   - [License](#license) 
 
 ## Env setup
+1. Install ROS Noetic
 
 ## Installation
 
