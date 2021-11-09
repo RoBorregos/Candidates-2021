@@ -1,0 +1,9 @@
+#goal         
+uint32 batch_size
+---
+#result
+float32 accuracy_percentage
+uint32 anomalies
+---
+#feedback
+float32 percentage_complete

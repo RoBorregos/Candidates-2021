@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 # license removed for brevity
-import rospy
+import roslib
+roslib.load_manifest('system_stimuli')
+import actionlib
 import time
+import rospy
 from geometry_msgs.msg import Pose, Quaternion
 from moveit_msgs.msg import Grasp
+
 
 def arm_movement():
     pub_arm_movement = rospy.Publisher('arm_movement', Grasp, queue_size=10)

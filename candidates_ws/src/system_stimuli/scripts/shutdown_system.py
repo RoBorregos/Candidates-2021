@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # license removed for brevity
-import rospy
 import time
+
+import rospy
 from std_msgs.msg import UInt16
 
 if __name__ == '__main__':

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(system_stimuli)          
+project(my_robot_msgs)
 
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
@@ -10,8 +10,8 @@ find_package(catkin REQUIRED COMPONENTS
   message_runtime
   roscpp
   rospy
-  std_msgs
-  )
+  std_msgs           
+)
   
 add_action_files(
   DIRECTORY action

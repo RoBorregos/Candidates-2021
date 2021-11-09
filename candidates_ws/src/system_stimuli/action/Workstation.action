@@ -1,0 +1,13 @@
+#goal         
+uint32 batch_size
+---
+#result
+uint16
+uint16
+uint16
+---
+#feedback
+uint16 system_health
+uint16
+uint16
+uint16
